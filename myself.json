@@ -5,17 +5,41 @@
             "middleNames": ["Patrick", "Douglas"],
             "surname": "Crawford",
             "age": 26,
-            "city": "London"
+            "currentCity": "London"
+        }],
+        "skills": [{
+            "languages": [{
+                "formal": ["C#", "Java", "SQL"],
+                "natural": [{
+                    "french": "Fluent",
+                    "spanish": "Intermediate"
+                }]
+            }],
+            "istqbCertified?": true
+        }],
+        "education": [{
+            "university": [{
+                "degree": ["Medical Engineering", "MEng", 2.1],
+                "institution": "Queen Mary University of London",
+                "durationInYears": 4
+            }],
+            "sixthForm": [{
+                "aLevels": [{
+                    "biology": "A",
+                    "chemistry": "A",
+                    "french": "B",
+                    "mathematics": "A"
+                }],
+                "institution": "St Angela's & St Bonaventure's Sixth Form",
+                "durationInYears": 2
+            }]
+        }],
+        "hobbies": [{
+            "sports": ["Boxing", "Cycling", "Judo", "Running", "Swimming"],
+            "reading": [{
+                "Books": ["Sustainability", "History", "Fiction"],
+                "Journals": ["The Economist", "The New York Times", "El País", "Le Monde", "Engineering & Technology Magazine"]
+            }]
         }]
-    }],
-    "string": "value",
-    "number": 7e10,
-    "boolean": true,
-    "arrayOfStrings": ["0", "1", "2"],
-    "arrayOfObjects": [{
-        "nestedString": "...",
-        "nestedNumber": 21,
-        "nestedBool": false,
-        "nestedArray": [true, true, 4, false, "[4]"]
     }]
 }
