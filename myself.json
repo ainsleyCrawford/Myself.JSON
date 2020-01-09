@@ -1,5 +1,13 @@
 {
-    "ainsleyCrawford": [{}],
+    "ainsleyCrawford": [{
+        "details": [{
+            "firstName": "Ainsley",
+            "middleNames": ["Patrick", "Douglas"],
+            "surname": "Crawford",
+            "age": 26,
+            "city": "London"
+        }]
+    }],
     "string": "value",
     "number": 7e10,
     "boolean": true,
