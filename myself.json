@@ -5,7 +5,7 @@
             "middleNames": ["Patrick", "Douglas"],
             "surname": "Crawford",
             "age": 26,
-            "currentCity": "London"
+            "nationality": "British"
         }],
         "skills": [{
             "languages": [{
