@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Profile</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let ainsleyCrawford =
+            `{
+                "details": [{
+                    "firstName": "Ainsley",
+                    "middleNames": ["Patrick", "Douglas"],
+                    "surname": "Crawford",
+                    "age": 26,
+                    "currentCity": "London"
+                }],
+                "skills": [{
+                    "languages": [{
+                        "formal": ["C#", "Java", "SQL"],
+                        "natural": [{
+                            "french": "Fluent",
+                            "spanish": "Intermediate"
+                        }]
+                    }],
+                    "istqb": true
+                }],
+                "education": [{
+                    "university": [{
+                        "degree": ["Medical Engineering", "MEng", 2.1],
+                        "institution": "Queen Mary University of London",
+                        "durationInYears": 4
+                    }],
+                    "sixthForm": [{
+                        "aLevels": [{
+                            "biology": "A",
+                            "chemistry": "A",
+                            "french": "B",
+                            "mathematics": "A"
+                        }],
+                        "institution": "St Angela's & St Bonaventure's Sixth Form",
+                        "durationInYears": 2
+                    }]
+                }],
+                "hobbies": [{
+                    "sports": ["Boxing", "Cycling", "Judo", "Running", "Swimming"],
+                    "reading": [{
+                        "Books": ["Sustainability", "History", "Fiction"],
+                        "Journals": ["The Economist", "The New York Times", "El País", "Le Monde", "Engineering & Technology Magazine"]
+                    }]
+                }]
+            }`
+            console.log(JSON.parse(ainsleyCrawford))
+        </script>
+    </body>
+</html>
