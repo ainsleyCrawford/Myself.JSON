@@ -4,8 +4,8 @@
         <title>JSON Profile</title>
     </head>
     <body>
-        <script type="text/javascript">
-            let ainsleyCrawford =
+        <script>
+            let aC =
             {
                 "details": {
                     "firstName": "Ainsley",
@@ -45,11 +45,35 @@
                     "sports": ["Boxing", "Cycling", "Judo", "Running", "Swimming"],
                     "reading": {
                         "Books": ["Sustainability", "History", "Fiction"],
-                        "Journals": ["The Economist", "The New York Times", "El País", "Le Monde", "Engineering & Technology Magazine"]
+                        "Journals": ["The Economist", "The New York Times", "El País",
+                        "Le Monde", "Engineering & Technology Magazine"]
                     }
                 }
             }
-            document.write(ainsleyCrawford.details.firstName);
+            document.write(
+                "<h1>" + aC.details.firstName + " " + aC.details.surname+"</h1>" +
+                "<h2>Summary</h2>" +
+                "<p>Conscientious, eager for knowledge and keen to share his " +
+                "own, " + aC.details.firstName + " produces high quality work " +
+                "individually and as a team member. He contributes to the development " +
+                "of work culture by being open-minded, pragmatic and lucid. " +
+                aC.details.firstName + " is attracted to software development on " +
+                "account of his logical nature and desire to work in a challenging " +
+                "environment.</p>" + 
+                "<h2>Skills</h2>" +
+                "<h2>Education</h2>" +
+                "<p>" + aC.details.firstName + " studied at " + aC.education.university.institution +
+                " for " + aC.education.university.durationInYears + " years, where " +
+                "he achieved a " + aC.education.university.degree[2] + " in " +
+                aC.education.university.degree[0] + ".<br>" +
+                "Previously, " + aC.details.firstName + " had studied for " +
+                aC.education.sixthForm.durationInYears + " years at " + 
+                aC.education.sixthForm.institution + ", where he obtained the " +
+                "following A-levels: " + 
+                JSON.stringify(aC.education.sixthForm.aLevels).replace('{','<ul type="circle"><li>').replace('}','.</ul>').replace(/\"/g,'').replace(/,/g,';<li>').replace(/\:/g,': ') +
+                "</p>"+
+                "<h2>Interests</h2>"
+            );
         </script>
     </body>
 </html>
