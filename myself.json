@@ -8,7 +8,7 @@
     },
     "skills": {
         "languages": {
-            "formal": ["C#", "Java", "SQL"],
+            "formal": ["C#", "Java", "JavaScript", "SQL"],
             "natural": {
                 "french": "Fluent",
                 "spanish": "Intermediate"
