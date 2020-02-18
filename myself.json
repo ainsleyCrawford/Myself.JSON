@@ -39,5 +39,10 @@
             "Books": ["Sustainability", "History", "Fiction"],
             "Journals": ["The Economist", "The New York Times", "El País", "Le Monde", "Engineering & Technology Magazine"]
         }
+    },
+    "portfolio": {
+        "gitHub": "https://github.com/ainsleyCrawford",
+        "codeWars": "https://www.codewars.com/users/ainsleyCrawford",
+        "hackerRank": "https://www.hackerrank.com/ainsleyCrawford"
     }
 }

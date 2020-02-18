@@ -48,48 +48,43 @@
                         "Journals": ["The Economist", "The New York Times", "El País",
                         "Le Monde", "Engineering & Technology Magazine"]
                     }
+                },
+                "portfolio": {
+                    "gitHub": "https://github.com/ainsleyCrawford",
+                    "codeWars": "https://www.codewars.com/users/ainsleyCrawford",
+                    "hackerRank": "https://www.hackerrank.com/ainsleyCrawford"
                 }
             }
             document.write(
                 "<h1>" + aC.details.firstName + " " + aC.details.surname+"</h1>" +
                 "<h2>Summary</h2>" +
-                "<p>Conscientious, eager for knowledge and keen to share his " +
-                "own, " + aC.details.firstName + " produces high quality work " +
-                "individually and as a team member. He contributes to the development " +
-                "of work culture by being open-minded, pragmatic and lucid. " +
-                aC.details.firstName + " is attracted to software development on " +
-                "account of his logical nature and desire to work in a challenging " +
-                "environment.</p>" + 
+                "<p>Conscientious, eager for knowledge and keen to share his own, " + aC.details.firstName + " produces high quality work " +
+                "individually and as a team member. He contributes to the development of work culture by being open-minded, pragmatic and lucid. " +
+                aC.details.firstName + " is attracted to software development on account of his logical nature and desire to work in a challenging environment.</p>" + 
                 "<h2>Skills</h2>" +
-                "<p><b>Object-oriented programming:</b> " + aC.skills.languages.formal[0] +
-                ", " + aC.skills.languages.formal[1] + " and " + aC.skills.languages.formal[2] +
-                ".<br><b>Software testing:</b> " +
-                (aC.skills.istqb ? "ISTQB certified." : "Not ISTQB certified.") +
-                "<br><b>Foreign languages:</b> " + aC.skills.languages.natural.french +
-                " French and " + aC.skills.languages.natural.spanish + " Spanish." +
-                "</p>" +
+                "<p><b>Object-oriented programming:</b> " + aC.skills.languages.formal[0] + ", " + aC.skills.languages.formal[1] + " and " + aC.skills.languages.formal[2] +
+                ".<br><b>Software testing:</b> " + (aC.skills.istqb ? "ISTQB certified." : "Not ISTQB certified.") +
+                "<br><b>Foreign languages:</b> " + aC.skills.languages.natural.french + " French and " + aC.skills.languages.natural.spanish + " Spanish.</p>" +
+                "<h2>Portfolio</h2>" +
+                "<p>Ainsley's online presence manifests the enjoyment he finds in programming. Notably, he pushes his favourite projects to " +
+                "<a href=\"" + aC.portfolio.gitHub + "\">GitHub</a>. Equally, he challenges himself for leisure on <a href=\"" + aC.portfolio.hackerRank + "\">HackerRank</a>, " +
+                "<a href=\"" + aC.portfolio.codeWars + "\">CodeWars</a> and HackAJob.</p>" +
                 "<h2>Education</h2>" +
-                "<p>" + aC.details.firstName + " studied at " + aC.education.university.institution +
-                " for " + aC.education.university.durationInYears + " years, where " +
-                "he achieved a " + aC.education.university.degree[2] + " in " +
-                aC.education.university.degree[0] + ".<br>" +
-                "Previously, " + aC.details.firstName + " had studied for " +
-                aC.education.sixthForm.durationInYears + " years at " + 
-                aC.education.sixthForm.institution + ", where he obtained the " +
-                "following A-levels: " + 
+                "<p>" + aC.details.firstName + " studied at " + aC.education.university.institution + " for " + aC.education.university.durationInYears + " years, where " +
+                "he achieved a " + aC.education.university.degree[2] + " in " + aC.education.university.degree[0] + ".<br>" +
+                "Previously, " + aC.details.firstName + " had studied for " + aC.education.sixthForm.durationInYears + " years at " + 
+                aC.education.sixthForm.institution + ", where he obtained the following A-levels: " + 
                 JSON.stringify(aC.education.sixthForm.aLevels).replace('{','<ul type="circle"><li>').replace('}','.</ul>').replace(/\"/g,'').replace(/,/g,';<li>').replace(/\:/g,': ') +
                 "<h2>Interests</h2>" +
-                "<p><b>Sport</b> has been a significant factor in " + aC.details.firstName +
-                "'s life since a young age. He competed for his university's Muay Thai " +
+                "<p><b>Sport</b> has been a significant factor in " + aC.details.firstName + "'s life since a young age. He competed for his university's Muay Thai " +
                 "club and is today a brown-belt " + aC.hobbies.sports[2] + "ka who enjoys " +
                 aC.hobbies.sports[1].toLowerCase() + ", " + aC.hobbies.sports[3].toLowerCase() + " and " + aC.hobbies.sports[4].toLowerCase() +
                 ". He creates and uploads videos analysing his favourite sport, boxing, " +
                 "to his <a href=\"https://www.youtube.com/channel/UChz1xu9jd5rvWVAueoRxl4w\">YouTube channel</a>.</p>" +
                 "<p><b>Reading</b> brings him enjoyment and edification. His preferred topics include " +
                 aC.hobbies.reading.Books[0].toLowerCase() + ", " + aC.hobbies.reading.Books[1].toLowerCase() + " and " + aC.hobbies.reading.Books[2].toLowerCase() +
-                ". Regarding current events, his main journals are " + aC.hobbies.reading.Journals[0] +
-                ", " + aC.hobbies.reading.Journals[1] + " and " + aC.hobbies.reading.Journals[2] +
-                ".</p>"
+                ". Regarding current events, his main journals are " + aC.hobbies.reading.Journals[0] + 
+                ", " + aC.hobbies.reading.Journals[1] + " and " + aC.hobbies.reading.Journals[2] + ".</p>"
             );
         </script>
     </body>
