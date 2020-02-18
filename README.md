@@ -7,7 +7,3 @@ Beyond returning object properties, this JavaScript code makes use of a ternary 
 1: `(aC.skills.istqb ? "ISTQB certified." : "Not ISTQB certified.")`.  
 2: `JSON.stringify(aC.education.sixthForm.aLevels).replace('{','<ul type="circle"><li>').replace('}','.</ul>').replace(/\"/g,'').replace(/,/g,';<li>').replace(/\:/g,': ')`.  
 3: `aC.hobbies.sports[1].toLowerCase()`.
-
-
-To do:  
-Add links to online profiles including HackerRank, HackAJob and CodeWars.
