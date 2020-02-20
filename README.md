@@ -3,7 +3,11 @@ This repository includes a text file in JavaScript Object Notation (JSON) format
 
 I used myself as the basis for this project, thus the titie. I used my curriculum vitae as an aid to express my profile (summary, skills, education and interests) as key–⁠element pairs that each hold a datum or an array of data.
 
-Beyond returning object properties, this JavaScript code makes use of a ternary if statement<sup>1</sup>, JSON's `stringify` function<sup>2</sup> and the JavaScript string methods `toLowerCase()`<sup>3</sup> and `replace()`<sup>2</sup>.  
-1: `(aC.skills.istqb ? "ISTQB certified." : "Not ISTQB certified.")`.  
-2: `JSON.stringify(aC.education.sixthForm.aLevels).replace('{','<ul type="circle"><li>').replace('}','.</ul>').replace(/\"/g,'').replace(/,/g,';<li>').replace(/\:/g,': ')`.  
+Beyond returning object properties, this JavaScript code makes use of a ternary if statement<sup>1</sup>, JSON's `stringify` function<sup>2</sup> and the JavaScript string methods `toLowerCase()`<sup>3</sup> and `replace()`<sup>2</sup>.
+
+1: `(aC.skills.istqb ? "ISTQB certified." : "Not ISTQB certified.")`.
+
+2: `JSON.stringify(aC.education.sixthForm.aLevels).replace('{','<ul type="circle"><li>').replace('}','.</ul>').replace(/\"/g,'').replace(/,/g,';<li>').replace(/\:/g,': ')`.
+
+
 3: `aC.hobbies.sports[1].toLowerCase()`.
