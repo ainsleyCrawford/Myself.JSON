@@ -3,7 +3,7 @@
         "firstName": "Ainsley",
         "middleNames": ["Patrick", "Douglas"],
         "surname": "Crawford",
-        "age": 26,
+        "age": 29,
         "nationality": "British"
     },
     "skills": {
@@ -42,6 +42,7 @@
     },
     "portfolio": {
         "gitHub": "https://github.com/ainsleyCrawford",
+        "codeSignal": "https://app.codesignal.com/profile/ainsleycrawf",
         "codeWars": "https://www.codewars.com/users/ainsleyCrawford",
         "hackerRank": "https://www.hackerrank.com/ainsleyCrawford"
     }
